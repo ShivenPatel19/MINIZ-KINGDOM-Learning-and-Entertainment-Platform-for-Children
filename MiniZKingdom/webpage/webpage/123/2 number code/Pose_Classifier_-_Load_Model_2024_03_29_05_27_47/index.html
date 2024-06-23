@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+
+
+  <title>Numbers</title>
+    <link
+        href="https://builder-assets.unbounce.com/published-css/main-7b78720.z.css"
+        rel="stylesheet"
+        media="screen"
+        type="text/css"
+      />
+      <link
+        href="https://builder-assets.unbounce.com/published-css/main-7b78720.z.css"
+        rel="stylesheet"
+        media="screen"
+        type="text/css"
+      />
+      <meta property="og:title" content="" />
+      <link
+        href="https://builder-assets.unbounce.com/published-css/main-7b78720.z.css"
+        rel="stylesheet"
+        media="screen"
+        type="text/css"
+      />
+    <meta
+      name="keywords"
+      content="educational games, kids games, kids app, reading, writing, spelling, counting, math, abcs, pre-literacy, free"
+    />
+    <meta
+      name="description"
+      content="Inspire a lifetime of learning with our educational app for kids ages 2-8. Kids can learn reading, writing, math, counting, ABCs, addition, subtraction, social-emotional skills, &amp; more. 100% free on iPhone, iPad, Android, and Amazo n"
+    />
+    <meta property="og:title" content="" />
+      <script type="text/javascript">
+        window.ub = {
+          page: {
+            id: "cfa4d3f4-0ac2-46f9-ae71-052f9c614d2e",
+            variantId: "o",
+            usedAs: "main",
+            name: "Khan Kids New Landing Page",
+            url: "https://learn.khanacademy.org/khan-academy-kids/",
+            dimensions: {
+              desktop: { height: 5034, width: 928 },
+              mobile: { height: 5985, width: 320 },
+              mobileMaxWidth: 600,
+            },
+          },
+          hooks: { beforeFormSubmit: [], afterFormSubmit: [] },
+        };
+      </script>
+      <script>
+        window.ub.page.lightboxTriggers = [
+          {
+            selector: "#lp-pom-image-28 a",
+            sizes: {
+              desktop: { width: 714, height: 401 },
+              mobile: { width: 320, height: 401 },
+            },
+            isExternal: true,
+          },
+          {
+            selector: "#lp-pom-image-145 a",
+            sizes: {
+              desktop: { width: 840, height: 480 },
+              mobile: { width: 320, height: 179 },
+            },
+            isExternal: true,
+          },
+        ];
+      </script>
+      <script>
+        window.ub.page.webFonts = [
+          "Lato:regular,700,900",
+          "Source Sans Pro:italic",
+        ];
+      </script>
+    <style>
+       p,
+       span {
+         -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+       }
+  
+       div.lp-pom-root .lp-pom-text a {
+         text-decoration: none !important;
+       }
+  
+       div.lp-pom-root .lp-pom-text a:hover {
+         text-decoration: underline !important;
+       }
+  
+       .highlight {
+         position: relative;
+       }
+  
+       .highlight::before {
+         content: " ";
+         position: absolute;
+         display: block;
+         top: 0.12em;
+         left: -0.04em;
+         right: -0.11em;
+         bottom: 0.1em;
+         z-index: -1;
+         background-color: #fbdd4b;
+         mix-blend-mode: multiply;
+         transform: matrix(1, -0.04, 0.04, 1, 0, 0);
+       }
+     </style>
+     <script>
+       var head = document.getElementsByTagName("head")[0],
+         script = document.createElement("script");
+       (script.type = "text/javascript"),
+         (script.src =
+           "https://banner.urlgeni.us/smart_banners/cbd408415a4641a3.js?url=" +
+           encodeURI(window.location)),
+         head.appendChild(script);
+     </script>
+     <script>
+       var head = document.getElementsByTagName("head")[0],
+         script = document.createElement("script");
+       (script.type = "text/javascript"),
+         (script.src =
+           "https://banner.urlgeni.us/smart_banners/cbd408415a4641a3.js?url=" +
+           encodeURI(window.location)),
+         head.appendChild(script);
+     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="lp-version" content="v6.24.42" />
+    <style title="page-styles" type="text/css" data-page-type="main_desktop">
+      /* CSS styles for header */
+      body {
+        color: #000;
+      }
+      a {
+        color: #b5b5b8;
+        text-decoration: none;
+      }
+      #lp-pom-root {
+          display: block;
+          background: rgba(238, 238, 238, 0);
+          background-repeat: no-repeat;
+          background-position: center center;
+          border-style: none;
+          margin: auto;
+          padding-top: 0px;
+          border-radius: 0px;
+          min-width: 928px;
+          height: 90px;
+        }
+        #lp-pom-root .lp-positioned-content {
+          top: 0px;
+          width: 928px;
+          margin-left: -464px;
+        }
+        #lp-pom-block-383 {
+          display: block;
+          background: rgba(255, 255, 255, 1);
+          border-style: none;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 0px;
+          border-radius: 0px;
+          width: 100%;
+          height: 68px;
+          position: absolute;
+        }
+        #lp-pom-block-383 .lp-pom-block-content {
+          margin-left: auto;
+          margin-right: auto;
+          width: 928px;
+          height: 68px;
+        }
+        #lp-pom-block-383-color-overlay {
+          position: absolute;
+          background: none;
+          height: 68px;
+          width: 100%;
+        }
+        #lp-pom-text-15 {
+          left: 539.3333435058594px;
+          top: 77.5px;
+          display: block;
+          background: rgba(255, 255, 255, 0);
+          border-style: none;
+          border-radius: 0px;
+          z-index: 118;
+          width: 65px;
+          height: 22px;
+          position: absolute;
+        }
+        #lp-pom-text-18 {
+          left: 631.3333435058594px;
+          top: 77.5px;
+          display: block;
+          background: rgba(255, 255, 255, 0);
+          border-style: none;
+          border-radius: 0px;
+          z-index: 119;
+          width: 65px;
+          height: 22px;
+          position: absolute;
+        }
+        #lp-pom-text-19 {
+          left: 707.3333435058594px;
+          top: 77.5px;
+          display: block;
+          background: rgba(255, 255, 255, 0);
+          border-style: none;
+          border-radius: 0px;
+          z-index: 120;
+          width: 65px;
+          height: 22px;
+          position: absolute;
+        }
+        #lp-pom-block-116 {
+          display: block;
+          background: rgba(10, 43, 102, 1);
+          border-style: none;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 0px;
+          border-radius: 0px;
+          top:2013px;
+          width: 100%;
+          height: 413px;
+          position: relative;
+        }
+        #lp-pom-block-116 .lp-pom-block-content {
+          margin-left: auto;
+          margin-right: auto;
+          width: 928px;
+          height: 413px;
+        }
+        #lp-pom-block-116-color-overlay {
+          position: absolute;
+          background: none;
+          height: 413px;
+          width: 100%;
+        }
+        #lp-pom-block-13 {
+          margin-left: -54.666656494140625px;
+          margin-top: 40px;
+          display: block;
+          background-image: url(../MiniZKingdom/Image/e00644a6-khankidslogo_10a401d000000000000028.png);
+          z-index: 117;
+          position: absolute;
+          border-style: none;
+          width: 300px;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+        #lp-pom-block-13 .lp-pom-block-content {
+          width: 364px;
+          height: 100px;
+          margin-left: 10px;
+          margin-right: auto;
+          width: 443px;
+          height: 443px;
+        }
+        #lp-pom-block-13 .lp-pom-block-content {
+          width: 443px;
+          height: 443px;
+          margin-left: 10px;
+          margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+  
+  <div class="lp-element lp-pom-root" id="lp-pom-root">
+    <div id="lp-pom-root-color-overlay"></div>
+    <div class="lp-positioned-content">
+         <div class="lp-element lp-pom-block" id="lp-pom-block-13">
+              <div id="lp-pom-block-13-color-overlay"></div>
+              <div class="lp-pom-block-content"></div>
+         </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-15">
+          <p>
+            <span style="color: rgb(33, 36, 44)"
+              ><a
+                data-action="url"
+                data-params="true"
+                href="#"
+                target="_blank"
+                ><span
+                  style="
+                    font-family: Lato;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 18px;
+                  "
+                  >Home</span
+                ></a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-18">
+          <p>
+            <span style="color: rgb(33, 36, 44)"
+              ><a
+                data-action="url"
+                data-params="true"
+                href="#"
+                target="_blank"
+                ><span
+                  style="
+                    font-family: Lato;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 18px;
+                  "
+                  >About</span
+                ></a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="lp-element lp-pom-text nlh" id="lp-pom-text-19">
+          <p>
+            <span style="color: rgb(33, 36, 44)"
+              ><a
+              href="#"
+                style="
+                  font-family: Lato;
+                  font-weight: 400;
+                  font-style: normal;
+                  font-size: 18px;
+                "
+                target="_top"
+                >Feedback</a
+              ></span
+            >
+          </p>
+        </div>  
+        <div class="lp-element lp-pom-image" id="lp-pom-image-20">
+         <div class="lp-pom-image-container" style="overflow: hidden">
+           <a
+             href="https://learn.khanacademy.org/khan-academy-kids/clkg/https/twitter.com/khanacademykids"
+             target="_blank"
+             data-params="true"
+             ><img
+               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+               alt=""
+               data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/076fcb7b-twitter_100h00f000000000000028.png"
+               data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/076fcb7b-twitter_1000000000000000000028.png"
+               data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/076fcb7b-twitter_100h00f000000000000028.png"
+               data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/076fcb7b-twitter_1000000000000000000028.png"
+           /></a>
+         </div>
+       </div>
+       <div class="lp-element lp-pom-image" id="lp-pom-image-21">
+         <div class="lp-pom-image-container" style="overflow: hidden">
+           <a
+             href="https://learn.khanacademy.org/khan-academy-kids/clkg/https/www.facebook.com/khankids"
+             target="_blank"
+             data-params="true"
+             ><img
+               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+               alt=""
+               data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d6702fb2-facebook_100900h000000000000028.png"
+               data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d6702fb2-facebook_1000000000000000000028.png"
+               data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d6702fb2-facebook_100900h000000000000028.png"
+               data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d6702fb2-facebook_1000000000000000000028.png"
+           /></a>
+         </div>
+       </div>
+       <div class="lp-element lp-pom-image" id="lp-pom-image-22">
+         <div class="lp-pom-image-container" style="overflow: hidden">
+           <a
+             href="https://learn.khanacademy.org/khan-academy-kids/clkg/https/www.instagram.com/khanacademykids/"
+             target="_blank"
+             data-params="true"
+             ><img
+               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+               alt=""
+               data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d63b82cc-instagram_100h00h000000000000028.png"
+               data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d63b82cc-instagram_1000000000000000000028.png"
+               data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d63b82cc-instagram_100h00h000000000000028.png"
+               data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/learn.khanacademy.org/khan-academy-kids/d63b82cc-instagram_1000000000000000000028.png"
+           /></a>
+         </div>
+       </div>
+
+    </div>
+
+    <div class="lp-element lp-pom-block" id="lp-pom-block-383">
+      <div id="lp-pom-block-383-color-overlay"></div>
+      <div class="lp-pom-block-content"></div>
+    </div>
+</div>
+
+
+  <div id="parrentBox">
+
+    <div id="column1">
+      <div id="canvasContainer"></div>
+      <div id="audioContainer">
+        <audio class="audio" id="myAudio" controls autoplay>Your browser does not support the <code>audio</code>
+          element.</audio>
+        <audio src="audio/bgaudio_ubdKryAA (mp3cut.net).mp3" id="bgAudio" class="audio" controls autoplay loop></audio>
+      </div>
+      <div id="textBox" class="bungee-spice-regular">Learn Numbers</div>
+    </div>
+
+    <div id="column2">
+      <div id="textBox2" class="bungee-spice-regular">Learn pose from here!</div>
+      <div class="container">
+        <div class="slides">
+          <img src="images/0.png" alt="0">
+        </div>
+        <div class="slides">
+          <img src="images/1.png" alt="1">
+        </div>
+        <div class="slides">
+          <img src="images/2.png" alt="2">
+        </div>
+        <div class="slides">
+          <img src="images/3.png" alt="3">
+        </div>
+        <div class="slides">
+          <img src="images/4.png" alt="4">
+        </div>
+        <div class="slides">
+          <img src="images/5.png" alt="5">
+        </div>
+        <div class="slides">
+          <img src="images/6.png" alt="6">
+        </div>
+        <div class="slides">
+          <img src="images/7.png" alt="7">
+        </div>
+        <div class="slides">
+          <img src="images/8.png" alt="8">
+        </div>
+        <div class="slides">
+          <img src="images/9.png" alt="9">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="nextAndPrevious"><strong>NOTE:</strong>&nbsp;Click on you video and Press Right Arrow Button to learn &nbsp;
+    <strong id="nextModel"> </strong> &nbsp; and Press Left Arrow Button to learn &nbsp;
+    <strong id="previousModel"></strong>. Currently you are learning <strong id="currentMode"></strong>
+  </div>
+  <script src="sketchshiven.js"></script>
+  <img id="logo" src="images/logo4.png" alt="logo">
+
+</body>
+
+</html>

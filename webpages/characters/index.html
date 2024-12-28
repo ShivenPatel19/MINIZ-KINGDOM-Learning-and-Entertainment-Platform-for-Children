@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <title>Mimic Characters</title>
+</head>
+
+<body>
+  <nav>
+    <div class="left">
+      <img src="images/logo2.png" alt="!">
+    </div>
+    <div class="mid">
+      <ul>
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="#">About</a>
+        </li>
+        <li><a href="#">Feedback</a>
+        </li>
+        <li><a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <button type="login" id="btn1">Login</button>
+      <button type="button" id="btn2" onclick="window.location.href='index.html'">Signup</button>
+    </div>
+  </nav>
+  <div id="parrentBox">
+
+    <div id="column1">
+      <div id="canvasContainer"></div>
+      <!-- <div id="audioContainer">
+        <audio class="audio" id="myAudio" controls autoplay>Your browser does not support the <code>audio</code>
+          element.</audio>
+        <audio src="audio/bgaudio_ubdKryAA (mp3cut.net).mp3" id="bgAudio" class="audio" controls autoplay loop></audio>
+      </div> -->
+      <div id="textBox" class="bungee-spice-regular">Mimic Characters Pose</div>
+    </div>
+
+    <div id="column2">
+      <div id="textBox2" class="bungee-spice-regular">Learn pose from here!</div>
+      <div class="container">
+        <div class="slides">
+          <img src="images/FLASH.png" alt="Flash">
+        </div>
+        <div class="slides">
+          <img src="images/HULK.png" alt="Hulk">
+        </div>
+        <div class="slides">
+          <img src="images/SPIDERMAN.png" alt="Spiderman">
+        </div>
+        <div class="slides">
+          <img src="images/WAKANDA FOREVER.png" alt="Wakanda Forever">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="videoContainer">
+    <!-- Video element will be added here -->
+    <video id="myVideoElement" controls autoplay></video>
+  </div>
+
+  <script src="sketchshiven.js"></script>
+
+
+</body>
+
+</html>
